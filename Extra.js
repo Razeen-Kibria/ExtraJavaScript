@@ -20,7 +20,7 @@ function animalCalculator(depth) {
 }
 var totalAnimals = animalCalculator(22);
 console.log(totalAnimals);
-*/
+
 
 //----------------------Task-02-----------Functions---------------------
 
@@ -40,3 +40,19 @@ function takeShower() {
 
 explain_CallBack("Razeen kibria", 23, handWash);
 explain_CallBack("Sayma sultana", 19, takeShower);
+*/
+
+//----------------------Task-03---------Argument--Functions---------------------
+
+//---------Always Remembers argument can't push or pop in function method------------------
+
+function addNumber(num1, num2) {
+  var sum = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    var num = arguments[i];
+    sum = sum + num;
+  }
+  return sum;
+}
+var result = addNumber(20, 30, 40, 50);
+console.log(result);
